@@ -7,7 +7,6 @@
 				"inputKeyword": "name",
 				"inputType": "text",
 				"inputPlaceholder": "Name"
-				
 			},
 			{
 				"inputLabel": "Hosts",
@@ -35,58 +34,22 @@
 						"validation": {
 							"regex": "([^\\s])"
 						}
-					}
-				]
-			},
-			{
-				"inputLabel": "GraphOptions",
-				"inputKeyword": "GraphOptions",
-				"inputType": "dynamicListInput",
-				"description": "",
-				"modalTitle": "Graph Options",
-				"modelInputs": [
+					},
 					{
-						"inputLabel": "name",
-						"inputKeyword": "name",
+						"inputLabel": "GraphName",
+						"inputKeyword": "GraphName",
 						"inputType": "text",
-						"inputPlaceholder": "name",
-						"description": "the graph name",
+						"inputPlaceholder": "Graph Name",
+						"description": "",
 						"validation": {
-							"regex": "([^\\s])" 
+							"regex": "([^\\s])"
 						}
-					},
-					{
-						"inputLabel": "language",
-						"inputKeyword": "language",
-						"inputType": "text",
-						"inputPlaceholder": "language",
-						"description": "the graph language"
-					},
-					{
-						"inputLabel": "readConsistency",
-						"inputKeyword": "readConsistency",
-						"inputType": "text",
-						"inputPlaceholder": "readConsistency",
-						"description": ""
-					},
-					{
-						"inputLabel": "source",
-						"inputKeyword": "source",
-						"inputType": "text",
-						"inputPlaceholder": "source",
-						"description": ""
-					},
-					{
-						"inputLabel": "writeConsistency",
-						"inputKeyword": "writeConsistency",
-						"inputType": "text",
-						"inputPlaceholder": "writeConsistency",
-						"description": ""
 					}
 				]
 			}
 		]
-	}, {
+	},
+	{
 		"lowerTab": "Authentication",
 		"structure": [
 			{
