@@ -125,7 +125,6 @@ making sure that you maintain a proper JSON format.
 				"propertyTooltip": "DB vendor",
 				"propertyType": "select",
 				"options": [
-					"Cassandra",
 					"Datastax"
 				],
 				"disabledOption": false
@@ -134,17 +133,12 @@ making sure that you maintain a proper JSON format.
 				"propertyName": "DB version",
 				"propertyKeyword": "dbVersion",
 				"shouldValidate": false,
-				"propertyTooltip": "DB version",
+				"propertyTooltip": "DSE Graph version",
 				"propertyType": "select",
 				"options": [
-					"2.0.x",
-					"2.1.x",
-					"3.0.x",
-					"3.11.x",
-					"DSE 4.8.x",
-					"DSE 5.0.x",
-					"DSE 5.1.x",
-					"DSE 6.0.x"
+					"6.0.x",
+					"6.7.x",
+					"6.8.x",
 				],
 				"disabledOption": false
 			},
