@@ -214,7 +214,6 @@ making sure that you maintain a proper JSON format.
 					"bigint",
 					"smallint",
 					"tinyint",
-					"counter",
 					"decimal",
 					"double",
 					"float",
