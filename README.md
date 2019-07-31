@@ -1,5 +1,5 @@
-# Cassandra
-Hackolade plugin for Cassandra DataStax
+# Datastax DSE Graph
+Hackolade plugin for DataStax DSE Graph
 
 <div class="main-content">
 
