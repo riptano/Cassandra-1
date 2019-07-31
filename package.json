@@ -1,8 +1,8 @@
 {
-	"name": "Cassandra",
-	"version": "0.1.32",
-	"versionDate": "2019-07-29",
-	"author": "hackolade",
+	"name": "DSE Graph",
+	"version": "0.1.1",
+	"versionDate": "2019-08-01",
+	"author": "Datastax",
 	"engines": {
 		"hackolade": "3.4.0",
 		"hackoladePlugin": "1.2.0"
@@ -10,10 +10,8 @@
 	"contributes": {
 		"target": {
 			"applicationTarget": "CASSANDRA",
-			"title": "Cassandra Datastax",
+			"title": "DSE Graph",
 			"versions": [
-				"2.x",
-				"3.x",
 				"DSE 4.x",
 				"DSE 5.x",
 				"DSE 6.X"
@@ -30,5 +28,5 @@
 			"enableArrayItemName": true
 		}
 	},
-	"description": "Hackolade plugin for Cassandra Datastax"
+	"description": "Hackolade plugin for DSE Graph"
 }
