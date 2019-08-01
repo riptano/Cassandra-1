@@ -9,6 +9,12 @@
 				"inputPlaceholder": "Name"
 			},
 			{
+				"inputLabel": "GraphName",
+				"inputKeyword": "GraphName",
+				"inputType": "text",
+				"inputPlaceholder": "Graph Name"
+			},
+			{
 				"inputLabel": "Hosts",
 				"inputKeyword": "hosts",
 				"inputType": "dynamicListInput",
@@ -30,16 +36,6 @@
 						"inputKeyword": "port",
 						"inputType": "text",
 						"inputPlaceholder": "Port",
-						"description": "",
-						"validation": {
-							"regex": "([^\\s])"
-						}
-					},
-					{
-						"inputLabel": "GraphName",
-						"inputKeyword": "GraphName",
-						"inputType": "text",
-						"inputPlaceholder": "Graph Name",
 						"description": "",
 						"validation": {
 							"regex": "([^\\s])"

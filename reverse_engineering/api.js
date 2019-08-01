@@ -28,7 +28,7 @@ module.exports = {
 
 		this.connect(connectionInfo, logger, (error) => {
 			if (error) {
-				logger.log('info', 'Connection failed', 'Test connection');
+				logger.log('info', 'Connection failed'+connectionInfo, 'Test connection');
 			} else {
 				logger.log('info', 'Connection successful', 'Test connection');
 			}

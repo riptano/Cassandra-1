@@ -1,4 +1,6 @@
 const cassandra = require('dse-driver');
+const dseGraph = require('dse-graph');
+
 const typesHelper = require('./typesHelper');
 const _ = require('lodash');
 const fs = require('fs');
@@ -58,6 +60,7 @@ const getSslOptions = (info, app) => {
 	}
 
 	const host = _.get(info, 'hosts[0].host', '');
+
 	let sslPromise;
 
 	if (info.ssl === 'jks') {
@@ -85,14 +88,22 @@ const connect = (app) => (info) => {
 	if (!state.client) {
 		const username = info.user;
 		const password = info.password;
+		//const graphName = info.graphOptions.name;
+
 		const authProvider = new cassandra.auth.PlainTextAuthProvider(username, password);
 		const contactPoints = info.hosts.map(item => `${item.host}:${item.port}`);
 		const readTimeout = 60 * 1000;
-		
+
+		//TODO: How the hell do we get the info object to recognize and return the
+		//      GraphName parameter entered and use it instead of my_graph???
 		return getSslOptions(info, app)
 			.then(sslOptions => {
 				return new cassandra.Client(Object.assign({
 					contactPoints,
+					localDataCenter: 'dc1',
+					profiles: [
+						new cassandra.ExecutionProfile('default', { graphOptions:  { name: 'my_graph' } })
+					],
 					authProvider,
 					socketOptions: {
 						readTimeout
