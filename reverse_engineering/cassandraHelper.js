@@ -1,4 +1,4 @@
-const cassandra = require('cassandra-driver');
+const cassandra = require('dse-driver');
 const typesHelper = require('./typesHelper');
 const _ = require('lodash');
 const fs = require('fs');

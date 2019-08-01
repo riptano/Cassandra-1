@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const types = require('cassandra-driver').types;
+const types = require('dse-driver').types;
 const defaultData = require('../properties_pane/defaultData.json');
 const abbrHash = {
 	numeric: 'num',
